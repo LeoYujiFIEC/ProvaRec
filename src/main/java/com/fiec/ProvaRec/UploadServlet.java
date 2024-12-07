@@ -31,7 +31,7 @@ public class UploadServlet extends HttpServlet {
         Part filePart = request.getPart("arquivo");
         String fileName = Paths.get(filePart.getSubmittedFileName()).getFileName().toString();
         String extensao = fileName.split("\\.")[1];
-        String bucket = "leoyuji";
+        String bucket = "alunofiecbucket";
         String temp = System.getenv("TEMP");
         String uuid = UUID.randomUUID().toString();
         String nomeArquivoNoBucket = uuid + "." + extensao;
@@ -47,7 +47,7 @@ public class UploadServlet extends HttpServlet {
 
         PutObjectRequest putOb = PutObjectRequest.builder()
                 .bucket(bucket)
-                .key("Pasta/" + nomeArquivoNoBucket)
+                .key("37647/" + nomeArquivoNoBucket)
                 .metadata(metadata)
                 .build();
 
