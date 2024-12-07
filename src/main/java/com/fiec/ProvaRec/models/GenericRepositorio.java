@@ -1,4 +1,4 @@
-package com.fiec.revisaofinal.models;
+package com.fiec.ProvaRec.models;
 
 import java.util.List;
 

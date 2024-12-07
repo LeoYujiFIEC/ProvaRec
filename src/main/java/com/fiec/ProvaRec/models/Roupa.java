@@ -1,4 +1,4 @@
-package com.fiec.revisaofinal.models;
+package com.fiec.ProvaRec.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,17 +14,17 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Produto {
+public class Roupa {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private String id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-    private String nome;
+    private String modelo;
 
     private double preco;
 
-    private String imagemUrl;
+    private String cor;
 
-
+    private String tamanho;
 }

@@ -1,4 +1,4 @@
-package com.fiec.revisaofinal;
+package com.fiec.ProvaRec;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -65,7 +65,7 @@ public class Main {
                 .setToken(token)
                 .setNotification(Notification.builder()
                         .setTitle("Notificaçao da Fila")
-                        .setBody("Fiec2024 - Enviando notificação para você")
+                        .setBody("ProvaFila - Enviando notificação para você")
                         .build())
                 .build();
 

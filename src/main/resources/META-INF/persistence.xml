@@ -4,12 +4,12 @@
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence
              https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
 
-    <persistence-unit name="minhaUnidadeDePersistencia">
+    <persistence-unit name="ProvaRec">
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
-            <property name="jakarta.persistence.jdbc.url"    value="jdbc:mysql://URL_DO_BANCO:3306/SEU_BANCO" />
-            <property name="jakarta.persistence.jdbc.user"   value="USUARIO" />
-            <property name="jakarta.persistence.jdbc.password" value="SENHA" />
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://mydb.cz6iwqakabj3.us-east-1.rds.amazonaws.com:3306/RecFinal_37647" />
+            <property name="jakarta.persistence.jdbc.user"   value="admin" />
+            <property name="jakarta.persistence.jdbc.password" value="BrasilHexa2026" />
             <property name="jakarta.persistence.schema-generation.database.action" value="update" />
             <property name="hibernate.dialect"    value="org.hibernate.dialect.MySQLDialect" />
             <property name="hibernate.show_sql"   value="true" />
